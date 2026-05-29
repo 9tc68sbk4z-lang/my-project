@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CPA Advisory Starter</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="#" aria-label="CPA Advisory Starter home">
+        <span class="brand-mark">CA</span>
+        <span>CPA Advisory Starter</span>
+      </a>
+      <nav class="nav" aria-label="Main navigation">
+        <a href="#services">Services</a>
+        <a href="#workflow">Workflow</a>
+        <a href="#intake">Intake</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">CPA-focused first web project</p>
+          <h1>Organize tax, bookkeeping, and advisory work in one simple client-facing page.</h1>
+          <p class="hero-text">
+            This starter page is built for a CPA background: clear services, visible deadlines,
+            and a lightweight client intake form that teaches the basics of HTML, CSS, and JavaScript.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#intake">Start Intake</a>
+            <a class="button secondary" href="#services">View Services</a>
+          </div>
+        </div>
+        <aside class="ledger-preview" aria-label="Financial dashboard preview">
+          <div class="ledger-header">
+            <span>Q2 Review</span>
+            <strong>$42,800</strong>
+          </div>
+          <div class="bar-row">
+            <span>Tax Reserve</span>
+            <div class="bar"><span style="width: 72%"></span></div>
+          </div>
+          <div class="bar-row">
+            <span>Books Closed</span>
+            <div class="bar"><span style="width: 88%"></span></div>
+          </div>
+          <div class="bar-row">
+            <span>Docs Collected</span>
+            <div class="bar"><span style="width: 54%"></span></div>
+          </div>
+          <div class="ledger-note">
+            <span class="dot"></span>
+            Estimated filing risk: Moderate
+          </div>
+        </aside>
+      </section>
+
+      <section id="services" class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Service Menu</p>
+          <h2>CPA services translated into website sections</h2>
+        </div>
+        <div class="service-grid">
+          <article class="service-card">
+            <h3>Tax Planning</h3>
+            <p>Quarterly estimates, entity-level planning, and year-end strategy reminders.</p>
+          </article>
+          <article class="service-card">
+            <h3>Bookkeeping Review</h3>
+            <p>Monthly close checks, reconciliation status, and cleanup priorities.</p>
+          </article>
+          <article class="service-card">
+            <h3>Advisory Snapshot</h3>
+            <p>Cash flow, margins, and decision-ready summaries for small business owners.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="workflow" class="section split-section">
+        <div>
+          <p class="eyebrow">Workflow</p>
+          <h2>Simple client process</h2>
+          <p>
+            The page models a real CPA workflow: collect information, review documents,
+            prepare recommendations, then deliver next actions.
+          </p>
+        </div>
+        <ol class="timeline">
+          <li><span>1</span>Client submits basic tax and business details.</li>
+          <li><span>2</span>CPA reviews books, documents, and open questions.</li>
+          <li><span>3</span>Client receives a prioritized action plan.</li>
+        </ol>
+      </section>
+
+      <section id="intake" class="section intake-section">
+        <div class="section-heading">
+          <p class="eyebrow">Client Intake</p>
+          <h2>Try a tiny JavaScript interaction</h2>
+        </div>
+        <form class="intake-form" id="intakeForm">
+          <label>
+            Client name
+            <input name="clientName" type="text" placeholder="Example LLC" required>
+          </label>
+          <label>
+            Main need
+            <select name="serviceNeed" required>
+              <option value="">Choose one</option>
+              <option>Tax planning</option>
+              <option>Bookkeeping cleanup</option>
+              <option>Business advisory</option>
+            </select>
+          </label>
+          <label>
+            Monthly revenue
+            <input name="revenue" type="number" min="0" step="100" placeholder="25000">
+          </label>
+          <button class="button primary" type="submit">Create Summary</button>
+        </form>
+        <p class="summary" id="summary" aria-live="polite"></p>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>Built as a beginner-friendly CPA web project. Replace this text with your own firm or portfolio details later.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
