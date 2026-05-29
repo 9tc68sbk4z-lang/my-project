@@ -2,6 +2,10 @@
 
 This is a beginner-friendly static website project for learning HTML, CSS, JavaScript, Git, and GitHub with a CPA-focused example.
 
+Live site after GitHub Pages finishes deploying:
+
+https://9tc68sbk4z-lang.github.io/my-project/
+
 ## How to Open
 
 Open `index.html` in a browser.

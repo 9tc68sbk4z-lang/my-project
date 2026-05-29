@@ -1,130 +1,258 @@
 <!doctype html>
-<html lang="en">
+<html lang="zh-CN">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>CPA Advisory Starter</title>
+    <title>谭森宦会计咨询</title>
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <header class="topbar">
-      <a class="brand" href="#" aria-label="CPA Advisory Starter home">
-        <span class="brand-mark">CA</span>
-        <span>CPA Advisory Starter</span>
+      <a class="brand" href="#" aria-label="谭森宦会计咨询 home">
+        <span class="brand-mark">TS</span>
+        <span>谭森宦会计咨询</span>
       </a>
       <nav class="nav" aria-label="Main navigation">
-        <a href="#services">Services</a>
-        <a href="#workflow">Workflow</a>
-        <a href="#intake">Intake</a>
+        <a href="#services">服务项目</a>
+        <a href="#workflow">服务流程</a>
+        <a href="#calculator">税款测算</a>
+        <a href="#intake">客户信息</a>
+        <a href="#report">初步报告</a>
+        <a href="#adjustments">税收调整</a>
       </nav>
     </header>
 
     <main>
       <section class="hero">
         <div class="hero-copy">
-          <p class="eyebrow">CPA-focused first web project</p>
-          <h1>Organize tax, bookkeeping, and advisory work in one simple client-facing page.</h1>
+          <p class="eyebrow">专业会计与税务咨询</p>
+          <h1>谭森宦会计咨询</h1>
           <p class="hero-text">
-            This starter page is built for a CPA background: clear services, visible deadlines,
-            and a lightweight client intake form that teaches the basics of HTML, CSS, and JavaScript.
+            为个人与小型企业提供税务规划、账务复核、季度预估税测算与经营数据分析，
+            帮助客户把复杂财务事项整理成清晰、可执行的下一步。
           </p>
           <div class="hero-actions">
-            <a class="button primary" href="#intake">Start Intake</a>
-            <a class="button secondary" href="#services">View Services</a>
+            <a class="button primary" href="#intake">提交客户信息</a>
+            <a class="button secondary" href="#calculator">测算季度税款</a>
           </div>
         </div>
-        <aside class="ledger-preview" aria-label="Financial dashboard preview">
+        <aside class="ledger-preview" aria-label="财务仪表盘预览">
           <div class="ledger-header">
-            <span>Q2 Review</span>
+            <span>第二季度复核</span>
             <strong>$42,800</strong>
           </div>
           <div class="bar-row">
-            <span>Tax Reserve</span>
+            <span>税款预留</span>
             <div class="bar"><span style="width: 72%"></span></div>
           </div>
           <div class="bar-row">
-            <span>Books Closed</span>
+            <span>账务结账</span>
             <div class="bar"><span style="width: 88%"></span></div>
           </div>
           <div class="bar-row">
-            <span>Docs Collected</span>
+            <span>资料收集</span>
             <div class="bar"><span style="width: 54%"></span></div>
           </div>
           <div class="ledger-note">
             <span class="dot"></span>
-            Estimated filing risk: Moderate
+            申报风险评估：中等
           </div>
         </aside>
       </section>
 
       <section id="services" class="section">
         <div class="section-heading">
-          <p class="eyebrow">Service Menu</p>
-          <h2>CPA services translated into website sections</h2>
+          <p class="eyebrow">服务项目</p>
+          <h2>围绕税务、账务与经营决策的核心服务</h2>
         </div>
         <div class="service-grid">
           <article class="service-card">
-            <h3>Tax Planning</h3>
-            <p>Quarterly estimates, entity-level planning, and year-end strategy reminders.</p>
+            <h3>税务规划</h3>
+            <p>季度预估税、年末税务安排、主体结构与扣除项目复核。</p>
           </article>
           <article class="service-card">
-            <h3>Bookkeeping Review</h3>
-            <p>Monthly close checks, reconciliation status, and cleanup priorities.</p>
+            <h3>账务复核</h3>
+            <p>月度结账检查、银行对账、费用分类与账务清理建议。</p>
           </article>
           <article class="service-card">
-            <h3>Advisory Snapshot</h3>
-            <p>Cash flow, margins, and decision-ready summaries for small business owners.</p>
+            <h3>经营分析</h3>
+            <p>现金流、利润率、收入结构与适合企业主阅读的决策摘要。</p>
           </article>
         </div>
       </section>
 
       <section id="workflow" class="section split-section">
         <div>
-          <p class="eyebrow">Workflow</p>
-          <h2>Simple client process</h2>
+          <p class="eyebrow">服务流程</p>
+          <h2>从资料收集到行动建议</h2>
           <p>
-            The page models a real CPA workflow: collect information, review documents,
-            prepare recommendations, then deliver next actions.
+            页面流程模拟真实会计咨询工作：先确认客户情况，再复核资料与账务，
+            最后形成清晰的税务或经营建议。
           </p>
         </div>
         <ol class="timeline">
-          <li><span>1</span>Client submits basic tax and business details.</li>
-          <li><span>2</span>CPA reviews books, documents, and open questions.</li>
-          <li><span>3</span>Client receives a prioritized action plan.</li>
+          <li><span>1</span>客户提交基本税务、收入、费用与业务背景。</li>
+          <li><span>2</span>会计顾问复核账务、资料完整性与主要风险点。</li>
+          <li><span>3</span>客户收到优先级明确的下一步行动清单。</li>
         </ol>
+      </section>
+
+      <section id="calculator" class="section calculator-section">
+        <div class="section-heading">
+          <p class="eyebrow">季度税款测算</p>
+          <h2>快速估算每季度应预留的税款</h2>
+          <p>
+            输入本季度收入、本季度费用、预估税率、本季度所得税费用发生额，以及新增递延所得税资产和递延所得税负债，
+            页面会同时给出利润口径参考值和本季度应预留税款。
+          </p>
+        </div>
+        <form class="calculator-form" id="taxCalculator">
+          <label>
+            本季度收入
+            <input name="quarterlyRevenue" type="number" min="0" step="0.01" placeholder="90000.00" required>
+          </label>
+          <label>
+            本季度费用
+            <input name="quarterlyExpenses" type="number" min="0" step="0.01" placeholder="36000.00" required>
+          </label>
+          <label>
+            预估税率（%）
+            <input name="taxRate" type="number" min="0" max="100" step="0.01" placeholder="25.00" required>
+          </label>
+          <label>
+            本季度所得税费用发生额
+            <input name="incomeTaxExpense" type="number" min="0" step="0.01" placeholder="18000.00" required>
+          </label>
+          <label>
+            本季度新增递延所得税资产
+            <input name="deferredTaxAsset" type="number" min="0" step="0.01" placeholder="3000.00" required>
+          </label>
+          <label>
+            本季度新增递延所得税负债
+            <input name="deferredTaxLiability" type="number" min="0" step="0.01" placeholder="1000.00" required>
+          </label>
+          <button class="button primary" type="submit">开始测算</button>
+        </form>
+        <div class="calculator-results" id="taxResults" aria-live="polite">
+          <div>
+            <span>本季度利润</span>
+            <strong id="quarterlyProfit">$0.00</strong>
+          </div>
+          <div>
+            <span>利润口径所得税</span>
+            <strong id="profitBasedTax">$0.00</strong>
+          </div>
+          <div>
+            <span>所得税费用发生额</span>
+            <strong id="incomeTaxExpenseResult">$0.00</strong>
+          </div>
+          <div>
+            <span>递延税项净调整</span>
+            <strong id="deferredAdjustment">$0.00</strong>
+          </div>
+          <div>
+            <span>本季度应预留税款</span>
+            <strong id="quarterlyReserve">$0.00</strong>
+          </div>
+        </div>
+        <p class="formula-note">
+          计算逻辑：本季度应预留税款 = 所得税费用发生额 + 新增递延所得税资产 - 新增递延所得税负债。
+        </p>
       </section>
 
       <section id="intake" class="section intake-section">
         <div class="section-heading">
-          <p class="eyebrow">Client Intake</p>
-          <h2>Try a tiny JavaScript interaction</h2>
+          <p class="eyebrow">客户信息</p>
+          <h2>生成一条初步服务摘要</h2>
         </div>
         <form class="intake-form" id="intakeForm">
           <label>
-            Client name
-            <input name="clientName" type="text" placeholder="Example LLC" required>
+            客户名称
+            <input name="clientName" type="text" placeholder="示例科技有限公司" required>
           </label>
           <label>
-            Main need
+            主要需求
             <select name="serviceNeed" required>
-              <option value="">Choose one</option>
-              <option>Tax planning</option>
-              <option>Bookkeeping cleanup</option>
-              <option>Business advisory</option>
+              <option value="">请选择</option>
+              <option>税务规划</option>
+              <option>账务清理</option>
+              <option>经营分析</option>
             </select>
           </label>
           <label>
-            Monthly revenue
+            月收入
             <input name="revenue" type="number" min="0" step="100" placeholder="25000">
           </label>
-          <button class="button primary" type="submit">Create Summary</button>
+          <button class="button primary" type="submit">生成摘要</button>
         </form>
         <p class="summary" id="summary" aria-live="polite"></p>
+      </section>
+
+      <section id="report" class="section report-section">
+        <div class="section-heading">
+          <p class="eyebrow">初步报告</p>
+          <h2>根据测算结果和客户信息生成简短报告</h2>
+          <p>
+            完成“季度税款测算”和“客户信息”后，点击按钮生成一份可复制的初步服务报告。
+          </p>
+        </div>
+        <button class="button primary" id="generateReport" type="button">生成初步报告</button>
+        <article class="report-output" id="reportOutput" aria-live="polite">
+          <p>请先完成税款测算和客户信息表单，然后生成报告。</p>
+        </article>
+      </section>
+
+      <section id="adjustments" class="section adjustments-section">
+        <div class="section-heading">
+          <p class="eyebrow">企业所得税调整事项</p>
+          <h2>从会计报表出发识别典型税收调整事项</h2>
+          <p>
+            这一页用于把会计利润调整为应纳税所得额。后续可以继续做成真正的税务调整工作底稿。
+          </p>
+        </div>
+        <div class="adjustment-grid">
+          <article class="adjustment-card">
+            <h3>业务招待费</h3>
+            <p>常见调整：按税法扣除限额与会计入账金额比较，超限部分纳税调增。</p>
+          </article>
+          <article class="adjustment-card">
+            <h3>广告费和业务宣传费</h3>
+            <p>常见调整：超过当年扣除比例的部分可能结转以后年度，形成时间性差异。</p>
+          </article>
+          <article class="adjustment-card">
+            <h3>职工薪酬与福利费</h3>
+            <p>常见调整：工资薪金、福利费、工会经费、职工教育经费需关注扣除范围和比例。</p>
+          </article>
+          <article class="adjustment-card">
+            <h3>折旧与摊销差异</h3>
+            <p>常见调整：会计折旧年限、税法折旧年限、加速折旧政策可能导致暂时性差异。</p>
+          </article>
+          <article class="adjustment-card">
+            <h3>资产减值准备</h3>
+            <p>常见调整：多数会计计提的减值准备在税前扣除时点受限制，通常需要纳税调增。</p>
+          </article>
+          <article class="adjustment-card">
+            <h3>罚款、滞纳金和非公益捐赠</h3>
+            <p>常见调整：行政罚款、税收滞纳金等通常不得税前扣除，需要永久性调增。</p>
+          </article>
+          <article class="adjustment-card">
+            <h3>研发费用加计扣除</h3>
+            <p>常见调整：符合条件的研发支出可能形成纳税调减，需保留项目资料和费用归集依据。</p>
+          </article>
+          <article class="adjustment-card">
+            <h3>免税收入与不征税收入</h3>
+            <p>常见调整：符合条件的股息红利、财政性资金等，需区分会计收入和税法处理。</p>
+          </article>
+          <article class="adjustment-card">
+            <h3>关联交易与转让定价</h3>
+            <p>常见调整：关联采购、销售、服务费、资金拆借需要关注公允性和资料留存。</p>
+          </article>
+        </div>
       </section>
     </main>
 
     <footer class="footer">
-      <p>Built as a beginner-friendly CPA web project. Replace this text with your own firm or portfolio details later.</p>
+      <p>谭森宦会计咨询 | 税务规划、账务复核与小型企业经营分析。</p>
     </footer>
 
     <script src="script.js"></script>
